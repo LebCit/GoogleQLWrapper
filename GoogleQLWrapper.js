@@ -61,11 +61,11 @@ class GoogleQLWrapper {
 		}
 
 		if (options.groupBy) {
-			query += ` Group BY ${options.orderBy}`
+			query += ` Group BY ${options.groupBy}`
 		}
 
 		if (options.pivot) {
-			query += ` PIVOT ${options.orderBy}`
+			query += ` PIVOT ${options.pivot}`
 		}
 
 		if (options.orderBy) {
@@ -73,15 +73,15 @@ class GoogleQLWrapper {
 		}
 
 		if (options.limit) {
-			query += ` LIMIT ${options.orderBy}`
+			query += ` LIMIT ${options.limit}`
 		}
 
 		if (options.offset) {
-			query += ` OFFSET ${options.orderBy}`
+			query += ` OFFSET ${options.offset}`
 		}
 
 		if (options.label) {
-			query += ` LABEL ${options.orderBy}`
+			query += ` LABEL ${options.label}`
 		}
 
 		// Omit FORMAT and OPTIONS
